@@ -22,25 +22,29 @@
 </header>
 <h2>Welcome to my Web Form</h2>
 <h3>A demo form for hotel room reservation</h3>
+    <form action="#">
+        
 <fieldset>
+
 <legend>Customer Information</legend>
+   
 <label>Full name:</label>
-<input type="text" name="full name" /><br />
-<br />
+<input type="text" name="full name" placeholder="Firstname Lastname"/><br />
+       
 <label>Email address:</label>
 <input type="text" name="email" /><br />
-<br />
+    
 <label>Phone:</label>
 <input type="text" name="phone" /><br />
 </fieldset>
+            
 <fieldset>
 <legend>Room Information</legend>
 <label>Arrival date:</label>
 <input type="date" name=" arivaldate" /><br />
-    <br />
     <label>Arrival time:</label>
     <input type="time" name="arivaltime" /><br />
-    <br />
+    
     <label>Select a room type</label>
     <select name="roomType" size="1" dropzone="drop">
         
@@ -48,9 +52,10 @@
         <option value="economic" selected="selected">Economic</option>
         <option value="Luxury" selected="selected">Luxury</option>
     </select>
-    <br />
+    
     <br />
     <label>Number of nights:</label>
+    
     <select dropzone="drop">
         <option value="30" selected="selected">30</option>
         <option value="29" selected="selected">29</option>
@@ -84,16 +89,26 @@
         <option value="1" selected="selected">1</option>
     </select>
     <br />
-    <br />
+    
     <label>Number of guest:</label>
+    
     <select dropzone="drop">
         <option value="3" selected="selected">3</option>
         <option value="2" selected="selected">2</option>
         <option value="1" selected="selected">1</option>
+        <option value="0" selected="selected">0</option>
     </select>
-    
-
 </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label>Promo Code:</label>
+            <input type="text" name="promoCode" /><br />
+            <label>Special Notes</label>
+            <textarea name="comments" cols="80" rows="8">Enter your special notes here</textarea>
+        </fieldset>
+        <input type="reset" name="reset" value="Clear Form" />
+        <input type="submit" name="submit" value="Request Reservation"
+        </form>
 <footer>
 <h5>Contact Information 
 <br />
