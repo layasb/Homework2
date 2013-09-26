@@ -22,7 +22,7 @@
 </header>
 <h2>Welcome to my Web Form</h2>
 <h3>A demo form for hotel room reservation</h3>
-    <form action="#">
+    <form action="#" method="post">
         
 <fieldset>
 
@@ -46,7 +46,7 @@
     <input type="time" name="arivaltime" /><br />
     
     <label>Select a room type</label>
-    <select name="roomType" size="1" dropzone="drop">
+    <select name="roomType">
         
         <option value="standard" selected="selected">Standard</option>
         <option value="economic" selected="selected">Economic</option>
@@ -56,8 +56,8 @@
     <br />
     <label>Number of nights:</label>
     
-    <select dropzone="drop">
-        <option value="30" selected="selected">30</option>
+    <select name="numberOfNights">
+        <option  value="30" selected="selected">30</option>
         <option value="29" selected="selected">29</option>
         <option value="28" selected="selected">28</option>
         <option value="27" selected="selected">27</option>
@@ -90,9 +90,8 @@
     </select>
     <br />
     
-    <label>Number of guest:</label>
-    
-    <select dropzone="drop">
+    <label>Number of guests:</label>
+    <select name="NumberOfGuests" >
         <option value="3" selected="selected">3</option>
         <option value="2" selected="selected">2</option>
         <option value="1" selected="selected">1</option>
@@ -104,10 +103,10 @@
             <label>Promo Code:</label>
             <input type="text" name="promoCode" /><br />
             <label>Special Notes</label>
-            <textarea name="comments" cols="80" rows="8">Enter your special notes here</textarea>
+            <textarea name="comments" cols="80" rows="8" placeholder="Enter your special notes here"></textarea>
         </fieldset>
         <input type="reset" name="reset" value="Clear Form" />
-        <input type="submit" name="submit" value="Request Reservation"
+        <input type="submit" name="submit" value="Request Reservation" />
         </form>
 <footer>
 <h5>Contact Information 
