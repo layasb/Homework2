@@ -9,9 +9,6 @@
             border-bottom: 7px solid #02fe00;
             
         }
-        #prom-code
-        {
-        }
     </style>
 </head>
 <body>
@@ -69,13 +66,15 @@
         <fieldset>
             <legend>Other Information</legend>
             <label>Promo Code:</label>
-            <input type="text" name="promoCode" id="prom-code" maxlength="4" /><br />
+            <input type="text" name="promoCode" pattern="[A-Za-z0-9]{4}"
+                title="No special characters!!!" id="prom-code" maxlength="4" /><br />
             <label>Special Notes</label>
             <textarea name="comments" cols="40" rows="4" placeholder="Enter your special notes here"></textarea>
         </fieldset>
         <input type="reset" name="reset" value="Clear Form" />
         <input type="submit" name="submit" value="Request Reservation" />
         </form>
+    <textarea cols="40" name="comments" placeholder="Enter your special notes here" rows="4"></textarea>
 <footer>
 <h5>Contact Information 
 <br />
