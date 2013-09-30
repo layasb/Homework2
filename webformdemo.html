@@ -9,6 +9,9 @@
             border-bottom: 7px solid #02fe00;
             
         }
+        #prom-code
+        {
+        }
     </style>
 </head>
 <body>
@@ -29,20 +32,20 @@
 <legend>Customer Information</legend>
    
 <label>Full name:</label>
-<input type="text" name="full name" placeholder="Firstname Lastname" required="required" /><br />
+<input type="text" name="full name" id="info_name" placeholder="Firstname Lastname" required="required" /><br />
        
-<label>Email address: <input type="email" name="email" required="required" /></label>
+<label>Email address: <input type="email" name="email" id="info_email" required="required" /></label>
 <br />
     
-<label>Phone: <input type="tel" name="phone" required="required"/></label>
+<label>Phone: <input type="tel" name="phone" id="info_phone" required="required"/></label>
 <br />
 </fieldset>
             
 <fieldset>
 <legend>Room Information</legend>
-<label>Arrival date: <input type="date" name=" arivaldate" required="required" /></label>
+<label>Arrival date: <input type="date" name=" arivaldate" id="arrive_date" required="required" /></label>
 <br />
-    <label>Arrival time: <input type="time" name="arivaltime" required="required"/></label>
+    <label>Arrival time: <input type="time" name="arivaltime" id="arrive_time" required="required"/></label>
     <br />
     
     <label>Select a room type</label>
@@ -66,7 +69,7 @@
         <fieldset>
             <legend>Other Information</legend>
             <label>Promo Code:</label>
-            <input type="text" name="promoCode" maxlength="4" /><br />
+            <input type="text" name="promoCode" id="prom-code" maxlength="4" /><br />
             <label>Special Notes</label>
             <textarea name="comments" cols="40" rows="4" placeholder="Enter your special notes here"></textarea>
         </fieldset>
