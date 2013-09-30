@@ -29,20 +29,20 @@
 <legend>Customer Information</legend>
    
 <label>Full name:</label>
-<input type="text" name="full name" placeholder="Firstname Lastname"/><br />
+<input type="text" name="full name" placeholder="Firstname Lastname" required="required" /><br />
        
-<label>Email address: <input type="text" name="email" /></label>
+<label>Email address: <input type="email" name="email" required="required" /></label>
 <br />
     
-<label>Phone: <input type="text" name="phone" /></label>
+<label>Phone: <input type="tel" name="phone" required="required"/></label>
 <br />
 </fieldset>
             
 <fieldset>
 <legend>Room Information</legend>
-<label>Arrival date: <input type="date" name=" arivaldate" /></label>
+<label>Arrival date: <input type="date" name=" arivaldate" required="required" /></label>
 <br />
-    <label>Arrival time: <input type="time" name="arivaltime" /></label>
+    <label>Arrival time: <input type="time" name="arivaltime" required="required"/></label>
     <br />
     
     <label>Select a room type</label>
@@ -54,21 +54,21 @@
     </select>
     
     <br />
-    <label>Number of nights: <input type="number" min="1" max="30" step="1" value="1" /></label>
+    <label>Number of nights: <input type="number" min="1" max="30" step="1" value="1" required="required" /></label>
     
     
    
     <br />
     
-    <label>Number of guests:  <input type="number" min="0" max="3" step="1" value="0" /></label>
+    <label>Number of guests:  <input type="number" min="0" max="3" step="1" value="0" required="required" /></label>
    
 </fieldset>
         <fieldset>
             <legend>Other Information</legend>
             <label>Promo Code:</label>
-            <input type="text" name="promoCode" /><br />
+            <input type="text" name="promoCode" maxlength="4" /><br />
             <label>Special Notes</label>
-            <textarea name="comments" cols="80" rows="8" placeholder="Enter your special notes here"></textarea>
+            <textarea name="comments" cols="40" rows="4" placeholder="Enter your special notes here"></textarea>
         </fieldset>
         <input type="reset" name="reset" value="Clear Form" />
         <input type="submit" name="submit" value="Request Reservation" />
